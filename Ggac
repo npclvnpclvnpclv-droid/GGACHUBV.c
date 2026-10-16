@@ -1,0 +1,11 @@
+local args = {
+    {
+        Index = 20,
+        Hit = true
+    }
+}
+
+game:GetService("ReplicatedStorage")
+    :WaitForChild("Events")
+    :WaitForChild("BossPhase2Action")
+    :FireServer(unpack(args))
